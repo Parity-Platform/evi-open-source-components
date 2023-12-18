@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2023-10-18T08:28:11.284Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0" etag="1QRAxj4H4G-q_3acopgE" version="21.7.2" type="device">
+  <diagram name="Page-1" id="gpfnSNbaUu1YFv82kUOz">
+    <mxGraphModel dx="2012" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-1" target="i8y8FQgMM2g2tomSKiXy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-1" value="waltid web portal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="350" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-2" target="i8y8FQgMM2g2tomSKiXy-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-2" value="waltid issuer portal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="350" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-3" target="i8y8FQgMM2g2tomSKiXy-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-3" value="waltid verifier portal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="350" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-4" value="EBSI" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="600" y="690" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-5" value="&lt;div&gt;Hashicorp&lt;/div&gt;&lt;div&gt;Vault&lt;/div&gt;&lt;div&gt;(PKI)&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="600" y="560" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-10" target="i8y8FQgMM2g2tomSKiXy-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-10" target="i8y8FQgMM2g2tomSKiXy-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="770" />
+              <mxPoint x="560" y="770" />
+              <mxPoint x="560" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-10" value="&lt;div&gt;verifier proxy microservice&lt;/div&gt;&lt;div&gt;(Oracle in future versions)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="180" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-13" target="i8y8FQgMM2g2tomSKiXy-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-13" value="&lt;div&gt;Wallet Connect&lt;/div&gt;&lt;div&gt;(Metamask, etc.)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-16" target="i8y8FQgMM2g2tomSKiXy-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-16" value="&lt;div&gt;- Create DID for EV Loader&lt;/div&gt;&lt;div&gt;- Created DID for Electric Vehicle Owner&lt;/div&gt;&lt;div&gt;- Issue VC for EV Owner&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.041666666666666664;" vertex="1" parent="1">
+          <mxGeometry x="40" y="510" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-18" target="i8y8FQgMM2g2tomSKiXy-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-22" value="OCPP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="i8y8FQgMM2g2tomSKiXy-21">
+          <mxGeometry x="0.298" y="-2" relative="1" as="geometry">
+            <mxPoint x="-6" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-18" value="&lt;div&gt;Charging Point&lt;/div&gt;&lt;div&gt;Receives X.509 certificate from&lt;/div&gt;&lt;div&gt;Electric Vehicle&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="600" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-20" target="i8y8FQgMM2g2tomSKiXy-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="i8y8FQgMM2g2tomSKiXy-20" target="i8y8FQgMM2g2tomSKiXy-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i8y8FQgMM2g2tomSKiXy-20" value="&lt;div&gt;Convert to JWK&lt;/div&gt;&lt;div&gt;and relay for issuing&lt;/div&gt;&lt;div&gt;or verification&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

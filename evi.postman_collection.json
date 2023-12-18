@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "e7dd4c41-af33-4790-b294-09df8cd4128c",
+		"name": "evi-open-source-components",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "460876"
+	},
+	"item": [
+		{
+			"name": "http://0.0.0.0:7002/did/create",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"method\": \"ebsi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:7002/did/create",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "7002",
+					"path": [
+						"did",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "subject",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"method\": \"ebsi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:7002/did/create",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "7002",
+							"path": [
+								"did",
+								"create"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Dec 2023 11:55:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						}
+					],
+					"cookie": [],
+					"body": "did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:7001/v1/credentials/issue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"templateId\": \"EVContractCertificate\",\n    \"config\": {\n        \"issuerDid\": \"did:ebsi:zuCbdFJikTcG45KgACFQoPy\",\n        \"subjectDid\": \"did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf\",\n        \"proofType\": \"LD_PROOF\"\n    },\n    \"credentialData\": {\n        \"id\": \"https://evloader.com/api/v1/ev-contract-certificates/1234\",\n        \"credentialSubject\": {\n            \"id\": \"did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf\",\n            \"certificate\": {\n                \"name\": \"EVContractCertificate\",\n                \"certificateChain\": \"-----BEGIN CERTIFICATE-----\\nMIIDODCCAiCgAwIBAgIUViaQ4Elep4g0OYC/gGw0D6GJ96gwDQYJKoZIhvcNAQEL\\nBQAwFzEVMBMGA1UEAxMMZXZsb2FkZXIuY29tMB4XDTIzMTEyNDEwMTIzNloXDTIz\\nMTEyNDEwMjMwNlowDzENMAsGA1UEAxMEZXZpMTCCASIwDQYJKoZIhvcNAQEBBQAD\\nggEPADCCAQoCggEBAL4iGcvRBsVfDtcayA3n58g+bU7N9PDCjoXfQy0MbSvlPXAF\\nZEwfLTFqqkW8vMGyISu5gzJcLOkhFFw2BEa2D00ydHJRVyyLv8L5TTayfeENces0\\nxmI0jmC2AL4QHmiq5kEBOPqK7C3wz/TLP7n+OgnwDpEuykYUxHSEGOuNNuevK94L\\nk0SOw1UAudDjTGSPO2IdiHq5mkM8okRa/a1GK5PfE4sVWstdP5L3Jd1jbMFAhfsw\\nGpzbR17Cu9Ue8u8u8UgrkU9JvDS9JApVuDfFdzpXrUMnY69ZomkJdYP/V5ktLV6h\\nEZvPO8JOLaYIvf19Ti/4+GSPlNv54jbjctBy4esCAwEAAaOBgzCBgDAOBgNVHQ8B\\nAf8EBAMCA6gwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQW\\nBBSGMVsyCG7sUIT1+qlMVYooAu+rZDAfBgNVHSMEGDAWgBR16bKYhYsnKKgIi+tU\\nS6bZJ0cvHDAPBgNVHREECDAGggRldmkxMA0GCSqGSIb3DQEBCwUAA4IBAQA9JcOB\\ngA8qVGVBfhq0UyCUPJFMgv2B6Qh/Ptsbs0Znt4Cs5bwJssA5qu+ZTjxoLBSco44j\\n2H74yRrbckn1/W8VE05rT2pH/rnWDVbKAx/FUl8Jd66opsxv+6rYD9C7SrABK3Hj\\nIxIGD+a1JN6TTSyaa7QZQOFZYJ0zlP521R+eDZubcuV459yJWSVpFWcdOw4SSeuJ\\nnZtO5LJqksiV3Ge1F8gAL1t0lYjkq3CcseTjS1kuFxVfr6zV4qRHFhlzwQWenyb2\\nlnFOh1+qhGLigjg939WaUJfqeLNDnUJnyp12jAwFJaa/6HRMKsUjiAtv45TPGg2X\\n11PczBLn4imvYIGu\\n-----END CERTIFICATE-----\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7001/v1/credentials/issue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"v1",
+						"credentials",
+						"issue"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:7001/v1/credentials/issue",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"templateId\": \"EVContractCertificate\",\n    \"config\": {\n        \"issuerDid\": \"did:ebsi:zuCbdFJikTcG45KgACFQoPy\",\n        \"subjectDid\": \"did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf\",\n        \"proofType\": \"LD_PROOF\"\n    },\n    \"credentialData\": {\n        \"id\": \"https://evloader.com/api/v1/ev-contract-certificates/1234\",\n        \"credentialSubject\": {\n            \"id\": \"did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf\",\n            \"certificate\": {\n                \"name\": \"EVContractCertificate\",\n                \"certificateChain\": \"-----BEGIN CERTIFICATE-----\\nMIIDODCCAiCgAwIBAgIUViaQ4Elep4g0OYC/gGw0D6GJ96gwDQYJKoZIhvcNAQEL\\nBQAwFzEVMBMGA1UEAxMMZXZsb2FkZXIuY29tMB4XDTIzMTEyNDEwMTIzNloXDTIz\\nMTEyNDEwMjMwNlowDzENMAsGA1UEAxMEZXZpMTCCASIwDQYJKoZIhvcNAQEBBQAD\\nggEPADCCAQoCggEBAL4iGcvRBsVfDtcayA3n58g+bU7N9PDCjoXfQy0MbSvlPXAF\\nZEwfLTFqqkW8vMGyISu5gzJcLOkhFFw2BEa2D00ydHJRVyyLv8L5TTayfeENces0\\nxmI0jmC2AL4QHmiq5kEBOPqK7C3wz/TLP7n+OgnwDpEuykYUxHSEGOuNNuevK94L\\nk0SOw1UAudDjTGSPO2IdiHq5mkM8okRa/a1GK5PfE4sVWstdP5L3Jd1jbMFAhfsw\\nGpzbR17Cu9Ue8u8u8UgrkU9JvDS9JApVuDfFdzpXrUMnY69ZomkJdYP/V5ktLV6h\\nEZvPO8JOLaYIvf19Ti/4+GSPlNv54jbjctBy4esCAwEAAaOBgzCBgDAOBgNVHQ8B\\nAf8EBAMCA6gwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQW\\nBBSGMVsyCG7sUIT1+qlMVYooAu+rZDAfBgNVHSMEGDAWgBR16bKYhYsnKKgIi+tU\\nS6bZJ0cvHDAPBgNVHREECDAGggRldmkxMA0GCSqGSIb3DQEBCwUAA4IBAQA9JcOB\\ngA8qVGVBfhq0UyCUPJFMgv2B6Qh/Ptsbs0Znt4Cs5bwJssA5qu+ZTjxoLBSco44j\\n2H74yRrbckn1/W8VE05rT2pH/rnWDVbKAx/FUl8Jd66opsxv+6rYD9C7SrABK3Hj\\nIxIGD+a1JN6TTSyaa7QZQOFZYJ0zlP521R+eDZubcuV459yJWSVpFWcdOw4SSeuJ\\nnZtO5LJqksiV3Ge1F8gAL1t0lYjkq3CcseTjS1kuFxVfr6zV4qRHFhlzwQWenyb2\\nlnFOh1+qhGLigjg939WaUJfqeLNDnUJnyp12jAwFJaa/6HRMKsUjiAtv45TPGg2X\\n11PczBLn4imvYIGu\\n-----END CERTIFICATE-----\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7001/v1/credentials/issue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7001",
+							"path": [
+								"v1",
+								"credentials",
+								"issue"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Dec 2023 13:25:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1449"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"type\" : [ \"VerifiableCredential\", \"EVContractCertificate\" ],\n  \"@context\" : [ \"https://www.w3.org/2018/credentials/v1\", \"https://www.w3.org/2018/credentials/examples/v1\", \"https://w3id.org/security/suites/jws-2020/v1\" ],\n  \"id\" : \"urn:uuid:57c18427-e862-48b9-bd6a-583cccb462a0\",\n  \"issuer\" : {\n    \"id\" : \"did:ebsi:zuCbdFJikTcG45KgACFQoPy\"\n  },\n  \"issuanceDate\" : \"2023-12-08T13:25:18Z\",\n  \"issued\" : \"2023-12-08T13:25:18Z\",\n  \"validFrom\" : \"2023-12-08T13:25:18Z\",\n  \"credentialSubject\" : {\n    \"id\" : \"did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf\",\n    \"certificate\" : {\n      \"name\" : \"EVContractCertificate\",\n      \"certificateChain\" : \"-----BEGIN CERTIFICATE-----\\nMIIDODCCAiCgAwIBAgIUViaQ4Elep4g0OYC/gGw0D6GJ96gwDQYJKoZIhvcNAQEL\\nBQAwFzEVMBMGA1UEAxMMZXZsb2FkZXIuY29tMB4XDTIzMTEyNDEwMTIzNloXDTIz\\nMTEyNDEwMjMwNlowDzENMAsGA1UEAxMEZXZpMTCCASIwDQYJKoZIhvcNAQEBBQAD\\nggEPADCCAQoCggEBAL4iGcvRBsVfDtcayA3n58g+bU7N9PDCjoXfQy0MbSvlPXAF\\nZEwfLTFqqkW8vMGyISu5gzJcLOkhFFw2BEa2D00ydHJRVyyLv8L5TTayfeENces0\\nxmI0jmC2AL4QHmiq5kEBOPqK7C3wz/TLP7n+OgnwDpEuykYUxHSEGOuNNuevK94L\\nk0SOw1UAudDjTGSPO2IdiHq5mkM8okRa/a1GK5PfE4sVWstdP5L3Jd1jbMFAhfsw\\nGpzbR17Cu9Ue8u8u8UgrkU9JvDS9JApVuDfFdzpXrUMnY69ZomkJdYP/V5ktLV6h\\nEZvPO8JOLaYIvf19Ti/4+GSPlNv54jbjctBy4esCAwEAAaOBgzCBgDAOBgNVHQ8B\\nAf8EBAMCA6gwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQW\\nBBSGMVsyCG7sUIT1+qlMVYooAu+rZDAfBgNVHSMEGDAWgBR16bKYhYsnKKgIi+tU\\nS6bZJ0cvHDAPBgNVHREECDAGggRldmkxMA0GCSqGSIb3DQEBCwUAA4IBAQA9JcOB\\ngA8qVGVBfhq0UyCUPJFMgv2B6Qh/Ptsbs0Znt4Cs5bwJssA5qu+ZTjxoLBSco44j\\n2H74yRrbckn1/W8VE05rT2pH/rnWDVbKAx/FUl8Jd66opsxv+6rYD9C7SrABK3Hj\\nIxIGD+a1JN6TTSyaa7QZQOFZYJ0zlP521R+eDZubcuV459yJWSVpFWcdOw4SSeuJ\\nnZtO5LJqksiV3Ge1F8gAL1t0lYjkq3CcseTjS1kuFxVfr6zV4qRHFhlzwQWenyb2\\nlnFOh1+qhGLigjg939WaUJfqeLNDnUJnyp12jAwFJaa/6HRMKsUjiAtv45TPGg2X\\n11PczBLn4imvYIGu\\n-----END CERTIFICATE-----\"\n    }\n  },\n  \"proof\" : {\n    \"type\" : \"JsonWebSignature2020\",\n    \"created\" : \"2023-12-08T13:25:18Z\",\n    \"verificationMethod\" : \"did:ebsi:zuCbdFJikTcG45KgACFQoPy#40b484ac4bdd4a2696b9e6cf80c195ed\",\n    \"jws\" : \"eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFZERTQSJ9..xrhhoX7U25xG0UG_XttxME7NmodUO_ScCcIbydMgo4mmgIAs7NJHMO2yzYO4XDsGYHHMEnoJZF5gnKo-ej5QAQ\"\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:7003/v1/verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policies\": [\n        {\n            \"policy\": \"SignaturePolicy\"\n        }\n    ],\n    \"credentials\": [\n        {\n            \"type\": [\n                \"VerifiableCredential\",\n                \"EVContractCertificate\"\n            ],\n            \"@context\": [\n                \"https://www.w3.org/2018/credentials/v1\",\n                \"https://www.w3.org/2018/credentials/examples/v1\",\n                \"https://w3id.org/security/suites/jws-2020/v1\"\n            ],\n            \"id\": \"urn:uuid:d5377a75-bbd7-4cc7-aaec-ff1ae3d95640\",\n            \"issuer\": {\n                \"id\": \"did:ebsi:zuCbdFJikTcG45KgACFQoPy\"\n            },\n            \"issuanceDate\": \"2023-12-08T11:55:47Z\",\n            \"issued\": \"2023-12-08T11:55:47Z\",\n            \"validFrom\": \"2023-12-08T11:55:47Z\",\n            \"credentialSubject\": {\n                \"id\": \"did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf\",\n                \"certificate\": {\n                    \"name\": \"EVContractCertificate\",\n                    \"certificateChain\": \"-----BEGIN CERTIFICATE-----\\nMIIDODCCAiCgAwIBAgIUViaQ4Elep4g0OYC/gGw0D6GJ96gwDQYJKoZIhvcNAQEL\\nBQAwFzEVMBMGA1UEAxMMZXZsb2FkZXIuY29tMB4XDTIzMTEyNDEwMTIzNloXDTIz\\nMTEyNDEwMjMwNlowDzENMAsGA1UEAxMEZXZpMTCCASIwDQYJKoZIhvcNAQEBBQAD\\nggEPADCCAQoCggEBAL4iGcvRBsVfDtcayA3n58g+bU7N9PDCjoXfQy0MbSvlPXAF\\nZEwfLTFqqkW8vMGyISu5gzJcLOkhFFw2BEa2D00ydHJRVyyLv8L5TTayfeENces0\\nxmI0jmC2AL4QHmiq5kEBOPqK7C3wz/TLP7n+OgnwDpEuykYUxHSEGOuNNuevK94L\\nk0SOw1UAudDjTGSPO2IdiHq5mkM8okRa/a1GK5PfE4sVWstdP5L3Jd1jbMFAhfsw\\nGpzbR17Cu9Ue8u8u8UgrkU9JvDS9JApVuDfFdzpXrUMnY69ZomkJdYP/V5ktLV6h\\nEZvPO8JOLaYIvf19Ti/4+GSPlNv54jbjctBy4esCAwEAAaOBgzCBgDAOBgNVHQ8B\\nAf8EBAMCA6gwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQW\\nBBSGMVsyCG7sUIT1+qlMVYooAu+rZDAfBgNVHSMEGDAWgBR16bKYhYsnKKgIi+tU\\nS6bZJ0cvHDAPBgNVHREECDAGggRldmkxMA0GCSqGSIb3DQEBCwUAA4IBAQA9JcOB\\ngA8qVGVBfhq0UyCUPJFMgv2B6Qh/Ptsbs0Znt4Cs5bwJssA5qu+ZTjxoLBSco44j\\n2H74yRrbckn1/W8VE05rT2pH/rnWDVbKAx/FUl8Jd66opsxv+6rYD9C7SrABK3Hj\\nIxIGD+a1JN6TTSyaa7QZQOFZYJ0zlP521R+eDZubcuV459yJWSVpFWcdOw4SSeuJ\\nnZtO5LJqksiV3Ge1F8gAL1t0lYjkq3CcseTjS1kuFxVfr6zV4qRHFhlzwQWenyb2\\nlnFOh1+qhGLigjg939WaUJfqeLNDnUJnyp12jAwFJaa/6HRMKsUjiAtv45TPGg2X\\n11PczBLn4imvYIGu\\n-----END CERTIFICATE-----\"\n                }\n            },\n            \"proof\": {\n                \"type\": \"JsonWebSignature2020\",\n                \"created\": \"2023-12-08T11:55:47Z\",\n                \"verificationMethod\": \"did:ebsi:zuCbdFJikTcG45KgACFQoPy#40b484ac4bdd4a2696b9e6cf80c195ed\",\n                \"jws\": \"eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFZERTQSJ9..FaTx5M9Q9ckwD7osMFh5SppPvEDZKhwO6oegW-nBcz15Y-qqOk4z-S9m3BO_kGY1x3IIzy5PJsxD5PUy6GhVDw\"\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7003/v1/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7003",
+					"path": [
+						"v1",
+						"verify"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "VALID",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policies\": [\n        {\n            \"policy\": \"SignaturePolicy\"\n        }\n    ],\n    \"credentials\": [\n        {\n            \"type\": [\n                \"VerifiableCredential\",\n                \"EVContractCertificate\"\n            ],\n            \"@context\": [\n                \"https://www.w3.org/2018/credentials/v1\",\n                \"https://www.w3.org/2018/credentials/examples/v1\",\n                \"https://w3id.org/security/suites/jws-2020/v1\"\n            ],\n            \"id\": \"urn:uuid:d5377a75-bbd7-4cc7-aaec-ff1ae3d95640\",\n            \"issuer\": {\n                \"id\": \"did:ebsi:zuCbdFJikTcG45KgACFQoPy\"\n            },\n            \"issuanceDate\": \"2023-12-08T11:55:47Z\",\n            \"issued\": \"2023-12-08T11:55:47Z\",\n            \"validFrom\": \"2023-12-08T11:55:47Z\",\n            \"credentialSubject\": {\n                \"id\": \"did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf\",\n                \"certificate\": {\n                    \"name\": \"EVContractCertificate\",\n                    \"certificateChain\": \"-----BEGIN CERTIFICATE-----\\nMIIDODCCAiCgAwIBAgIUViaQ4Elep4g0OYC/gGw0D6GJ96gwDQYJKoZIhvcNAQEL\\nBQAwFzEVMBMGA1UEAxMMZXZsb2FkZXIuY29tMB4XDTIzMTEyNDEwMTIzNloXDTIz\\nMTEyNDEwMjMwNlowDzENMAsGA1UEAxMEZXZpMTCCASIwDQYJKoZIhvcNAQEBBQAD\\nggEPADCCAQoCggEBAL4iGcvRBsVfDtcayA3n58g+bU7N9PDCjoXfQy0MbSvlPXAF\\nZEwfLTFqqkW8vMGyISu5gzJcLOkhFFw2BEa2D00ydHJRVyyLv8L5TTayfeENces0\\nxmI0jmC2AL4QHmiq5kEBOPqK7C3wz/TLP7n+OgnwDpEuykYUxHSEGOuNNuevK94L\\nk0SOw1UAudDjTGSPO2IdiHq5mkM8okRa/a1GK5PfE4sVWstdP5L3Jd1jbMFAhfsw\\nGpzbR17Cu9Ue8u8u8UgrkU9JvDS9JApVuDfFdzpXrUMnY69ZomkJdYP/V5ktLV6h\\nEZvPO8JOLaYIvf19Ti/4+GSPlNv54jbjctBy4esCAwEAAaOBgzCBgDAOBgNVHQ8B\\nAf8EBAMCA6gwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQW\\nBBSGMVsyCG7sUIT1+qlMVYooAu+rZDAfBgNVHSMEGDAWgBR16bKYhYsnKKgIi+tU\\nS6bZJ0cvHDAPBgNVHREECDAGggRldmkxMA0GCSqGSIb3DQEBCwUAA4IBAQA9JcOB\\ngA8qVGVBfhq0UyCUPJFMgv2B6Qh/Ptsbs0Znt4Cs5bwJssA5qu+ZTjxoLBSco44j\\n2H74yRrbckn1/W8VE05rT2pH/rnWDVbKAx/FUl8Jd66opsxv+6rYD9C7SrABK3Hj\\nIxIGD+a1JN6TTSyaa7QZQOFZYJ0zlP521R+eDZubcuV459yJWSVpFWcdOw4SSeuJ\\nnZtO5LJqksiV3Ge1F8gAL1t0lYjkq3CcseTjS1kuFxVfr6zV4qRHFhlzwQWenyb2\\nlnFOh1+qhGLigjg939WaUJfqeLNDnUJnyp12jAwFJaa/6HRMKsUjiAtv45TPGg2X\\n11PczBLn4imvYIGu\\n-----END CERTIFICATE-----\"\n                }\n            },\n            \"proof\": {\n                \"type\": \"JsonWebSignature2020\",\n                \"created\": \"2023-12-08T11:55:47Z\",\n                \"verificationMethod\": \"did:ebsi:zuCbdFJikTcG45KgACFQoPy#40b484ac4bdd4a2696b9e6cf80c195ed\",\n                \"jws\": \"eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFZERTQSJ9..FaTx5M9Q9ckwD7osMFh5SppPvEDZKhwO6oegW-nBcz15Y-qqOk4z-S9m3BO_kGY1x3IIzy5PJsxD5PUy6GhVDw\"\n            }\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7003/v1/verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7003",
+							"path": [
+								"v1",
+								"verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 08 Dec 2023 11:56:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "110"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"valid\": true,\n    \"results\": [\n        {\n            \"result\": true,\n            \"policyResults\": {\n                \"SignaturePolicy\": {\n                    \"isSuccess\": true\n                }\n            },\n            \"valid\": true\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://0.0.0.0:7001/v1/templates/EVContractCertificate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": [\n        \"VerifiableCredential\",\n        \"EVContractCertificate\"\n    ],\n    \"@context\": [\n        \"https://www.w3.org/2018/credentials/v1\",\n        \"https://www.w3.org/2018/credentials/examples/v1\"\n    ],\n    \"id\": \"https://evloader.com/api/v1/ev-contract-certificates/1234\",\n    \"issuer\": {\n        \"id\": \"did:ebsi:z26DMZDhYfkik6V33hqNvbzR\"\n    },\n    \"issuanceDate\": \"2023-03-21T15:35:08Z\",\n    \"issued\": \"2023-03-21T15:35:08Z\",\n    \"validFrom\": \"2023-03-21T15:35:08Z\",\n    \"credentialSubject\": {\n        \"id\": \"did:ebsi:electric_vehicle_owner_id\",\n        \"certificate\": {\n            \"name\": \"EVContractCertificate\",\n            \"certificateChain\": \"\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:7001/v1/templates/EVContractCertificate",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "7001",
+					"path": [
+						"v1",
+						"templates",
+						"EVContractCertificate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

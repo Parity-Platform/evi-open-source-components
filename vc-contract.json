@@ -1,0 +1,31 @@
+{
+  "type": [
+      "VerifiableCredential",
+      "EVContractCertificate"
+  ],
+  "@context": [
+      "https://www.w3.org/2018/credentials/v1",
+      "https://www.w3.org/2018/credentials/examples/v1",
+      "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "urn:uuid:ffa1f69f-5bb9-4ddb-8d96-79a018041766",
+  "issuer": {
+      "id": "did:ebsi:zuCbdFJikTcG45KgACFQoPy"
+  },
+  "issuanceDate": "2023-12-08T13:27:51Z",
+  "issued": "2023-12-08T13:27:51Z",
+  "validFrom": "2023-12-08T13:27:51Z",
+  "credentialSubject": {
+      "id": "did:ebsi:zYu3Xu2jfHiSR9gpeFzmUmf",
+      "certificate": {
+          "name": "EVContractCertificate",
+          "certificateChain": "-----BEGIN CERTIFICATE-----\nMIIDODCCAiCgAwIBAgIUViaQ4Elep4g0OYC/gGw0D6GJ96gwDQYJKoZIhvcNAQEL\nBQAwFzEVMBMGA1UEAxMMZXZsb2FkZXIuY29tMB4XDTIzMTEyNDEwMTIzNloXDTIz\nMTEyNDEwMjMwNlowDzENMAsGA1UEAxMEZXZpMTCCASIwDQYJKoZIhvcNAQEBBQAD\nggEPADCCAQoCggEBAL4iGcvRBsVfDtcayA3n58g+bU7N9PDCjoXfQy0MbSvlPXAF\nZEwfLTFqqkW8vMGyISu5gzJcLOkhFFw2BEa2D00ydHJRVyyLv8L5TTayfeENces0\nxmI0jmC2AL4QHmiq5kEBOPqK7C3wz/TLP7n+OgnwDpEuykYUxHSEGOuNNuevK94L\nk0SOw1UAudDjTGSPO2IdiHq5mkM8okRa/a1GK5PfE4sVWstdP5L3Jd1jbMFAhfsw\nGpzbR17Cu9Ue8u8u8UgrkU9JvDS9JApVuDfFdzpXrUMnY69ZomkJdYP/V5ktLV6h\nEZvPO8JOLaYIvf19Ti/4+GSPlNv54jbjctBy4esCAwEAAaOBgzCBgDAOBgNVHQ8B\nAf8EBAMCA6gwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQW\nBBSGMVsyCG7sUIT1+qlMVYooAu+rZDAfBgNVHSMEGDAWgBR16bKYhYsnKKgIi+tU\nS6bZJ0cvHDAPBgNVHREECDAGggRldmkxMA0GCSqGSIb3DQEBCwUAA4IBAQA9JcOB\ngA8qVGVBfhq0UyCUPJFMgv2B6Qh/Ptsbs0Znt4Cs5bwJssA5qu+ZTjxoLBSco44j\n2H74yRrbckn1/W8VE05rT2pH/rnWDVbKAx/FUl8Jd66opsxv+6rYD9C7SrABK3Hj\nIxIGD+a1JN6TTSyaa7QZQOFZYJ0zlP521R+eDZubcuV459yJWSVpFWcdOw4SSeuJ\nnZtO5LJqksiV3Ge1F8gAL1t0lYjkq3CcseTjS1kuFxVfr6zV4qRHFhlzwQWenyb2\nlnFOh1+qhGLigjg939WaUJfqeLNDnUJnyp12jAwFJaa/6HRMKsUjiAtv45TPGg2X\n11PczBLn4imvYIGu\n-----END CERTIFICATE-----"
+      }
+  },
+  "proof": {
+      "type": "JsonWebSignature2020",
+      "created": "2023-12-08T13:27:51Z",
+      "verificationMethod": "did:ebsi:zuCbdFJikTcG45KgACFQoPy#40b484ac4bdd4a2696b9e6cf80c195ed",
+      "jws": "eyJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJhbGciOiJFZERTQSJ9..bl5iGRzw4WaUvI8Vq2hJvRbCdG5YuNpeg43Rg7ItUxC9ikLREi-ocGJ0zOc2uVoi4gMfNLQDnutN1ICQlHl1CA"
+  }
+}

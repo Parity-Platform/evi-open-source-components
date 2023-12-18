@@ -1,0 +1,11 @@
+{
+  "walletUiUrl": "http://$EXTERNAL_HOSTNAME:3001",
+  "walletApiUrl": "http://$EXTERNAL_HOSTNAME:3001/api",
+  "issuers": {
+    "walt.id": {
+      "id": "walt.id",
+      "url": "http://$EXTERNAL_HOSTNAME:8002/issuer-api/default/oidc",
+      "description": "walt.id Issuer Portal"
+    }
+  }
+}
